@@ -1,0 +1,67 @@
+.techstack-section {
+  height: 100vh;
+  background-color: #FDEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.techstack-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.logo-container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  animation: scrollX 25s linear infinite;
+}
+
+.logo-ball {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.logo-ball:hover {
+  transform: scale(1.15);
+}
+
+/* Floating Animations */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+/* Apply Animation Classes */
+.bounce { animation: bounce 2s infinite; }
+.float { animation: float 3s infinite; }
+.wiggle { animation: wiggle 1.5s infinite; }
+
+/* Optional: Horizontal Scrolling Infinite (Advanced Visual Effect) */
+@keyframes scrollX {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}

@@ -1,0 +1,73 @@
+.work-section {
+  padding: 80px 20px;
+  background-color: #FDEEEE;
+  text-align: center;
+}
+
+.work-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.work-container {
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1A1A1A;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #1A1A1A;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: 500;
+  color: #F57C7C;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #E86C6C;
+}
+
+.work-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.work-container::-webkit-scrollbar-thumb {
+  background-color: #F57C7C;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    width: 95%;
+  }
+}
